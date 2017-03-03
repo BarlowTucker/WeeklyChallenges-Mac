@@ -39,6 +39,7 @@ class Euler1 {
             i -= 3
         }
         
+        //Solve for multiples of 5
         i = 995
         while i > 0 {
             defer { i -= 5 }
@@ -57,10 +58,10 @@ class Euler1 {
         Then we add the multiples of 3 and 5, and subtract the multiples of 15 (because they would be counted twice)
      
      */
-    @inline(__always) class func fastestSolution() -> Int {
-        let threes:Int = self.sumOfMultiples(of: 3, under: 1000)
-        let fives:Int = self.sumOfMultiples(of: 5, under: 1000)
-        let fifteens: Int = self.sumOfMultiples(of: 15, under: 1000)
+    @inline(__always) class func fastestSolution(_ limit: Int) -> Int {
+        let threes:Int = self.sumOfMultiples(of: 3, under: limit)
+        let fives:Int = self.sumOfMultiples(of: 5, under: limit)
+        let fifteens: Int = self.sumOfMultiples(of: 15, under: limit)
         
         return threes + fives - fifteens
     }
@@ -71,8 +72,9 @@ class Euler1 {
     }
     
     class func solve() -> String {
-        let sum = self.fastestSolution()
+        let limit:Int = 1000
+        let sum = self.fastestSolution(limit)
         
-        return "The sum of all the multiples of 3 or 5 under 1000 is \(sum)"
+        return "The sum of all the multiples of 3 or 5 under \(limit) is \(sum)"
     }
 }
