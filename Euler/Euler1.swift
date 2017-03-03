@@ -57,7 +57,7 @@ class Euler1 {
         Then we add the multiples of 3 and 5, and subtract the multiples of 15 (because they would be counted twice)
      
      */
-    class func fastestSolution() -> Int {
+    @inline(__always) class func fastestSolution() -> Int {
         let threes:Int = self.sumOfMultiples(of: 3, under: 1000)
         let fives:Int = self.sumOfMultiples(of: 5, under: 1000)
         let fifteens: Int = self.sumOfMultiples(of: 15, under: 1000)
@@ -65,7 +65,7 @@ class Euler1 {
         return threes + fives - fifteens
     }
     
-    class func sumOfMultiples(of number: Int, under:Int) -> Int {
+    @inline(__always) class func sumOfMultiples(of number: Int, under:Int) -> Int {
         let multiples:Int = (under - 1) / number
         return number * multiples * (multiples + 1)/2
     }
