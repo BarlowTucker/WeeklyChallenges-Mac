@@ -9,7 +9,7 @@
 import Foundation
 
 let start = Date()
-let answer = ScrabbleChallenge.solve()
+let answer = Euler1.solve()
 let end = Date()
 let time = end.timeIntervalSince(start) * 1000
 
