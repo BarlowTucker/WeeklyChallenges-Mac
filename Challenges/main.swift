@@ -8,5 +8,9 @@
 
 import Foundation
 
-print("Hello, World!")
+let start = Date()
+let answer = ScrabbleChallenge.solve()
+let end = Date()
+let time = end.timeIntervalSince(start) * 1000
 
+print("Answer: \(answer)\nFound in \(time) milliseconds")

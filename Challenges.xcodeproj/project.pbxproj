@@ -7,7 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C80CC921E60E4F300BDCB1B /* ScrabbleChallenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C80CC911E60E4F300BDCB1B /* ScrabbleChallenge.swift */; };
 		0C8CC54C1E4E5F9F008DF511 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C8CC54B1E4E5F9F008DF511 /* main.swift */; };
+		0C8CC5551E4E5FEE008DF511 /* ChemistrySpeller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C8CC5541E4E5FEE008DF511 /* ChemistrySpeller.swift */; };
+		0C8CC5591E4E61E7008DF511 /* WordDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C8CC5581E4E61E7008DF511 /* WordDictionary.swift */; };
+		0C96872B1E6A0DA3003F826A /* Euler1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C96872A1E6A0DA3003F826A /* Euler1.swift */; };
+		0CAFE4ED1E57738700BC73B4 /* Euler14.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAFE4EC1E57738700BC73B4 /* Euler14.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +28,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0C80CC911E60E4F300BDCB1B /* ScrabbleChallenge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScrabbleChallenge.swift; path = Other/ScrabbleChallenge.swift; sourceTree = "<group>"; };
 		0C8CC5481E4E5F9F008DF511 /* Challenges */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Challenges; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C8CC54B1E4E5F9F008DF511 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		0C8CC5541E4E5FEE008DF511 /* ChemistrySpeller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChemistrySpeller.swift; path = Other/ChemistrySpeller.swift; sourceTree = "<group>"; };
+		0C8CC5561E4E615B008DF511 /* dictionary.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = dictionary.txt; path = Challenges/dictionary.txt; sourceTree = "<group>"; };
+		0C8CC5581E4E61E7008DF511 /* WordDictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WordDictionary.swift; path = Challenges/WordDictionary.swift; sourceTree = "<group>"; };
+		0C8CC55A1E4E64B0008DF511 /* elements.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = elements.txt; path = Challenges/elements.txt; sourceTree = "<group>"; };
+		0C96872A1E6A0DA3003F826A /* Euler1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Euler1.swift; sourceTree = "<group>"; };
+		0CAFE4EC1E57738700BC73B4 /* Euler14.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Euler14.swift; path = Euler/Euler14.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,7 +53,10 @@
 		0C8CC53F1E4E5F9F008DF511 = {
 			isa = PBXGroup;
 			children = (
+				0C8CC5531E4E5FB3008DF511 /* Other */,
+				0C8CC5521E4E5FA6008DF511 /* Euler */,
 				0C8CC54A1E4E5F9F008DF511 /* Challenges */,
+				0C8CC5571E4E615F008DF511 /* Resources */,
 				0C8CC5491E4E5F9F008DF511 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -60,6 +75,42 @@
 				0C8CC54B1E4E5F9F008DF511 /* main.swift */,
 			);
 			path = Challenges;
+			sourceTree = "<group>";
+		};
+		0C8CC5521E4E5FA6008DF511 /* Euler */ = {
+			isa = PBXGroup;
+			children = (
+				0CAFE4EC1E57738700BC73B4 /* Euler14.swift */,
+				0C96872A1E6A0DA3003F826A /* Euler1.swift */,
+			);
+			name = Euler;
+			sourceTree = "<group>";
+		};
+		0C8CC5531E4E5FB3008DF511 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				0C8CC5541E4E5FEE008DF511 /* ChemistrySpeller.swift */,
+				0C80CC911E60E4F300BDCB1B /* ScrabbleChallenge.swift */,
+			);
+			name = Other;
+			sourceTree = "<group>";
+		};
+		0C8CC5571E4E615F008DF511 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0C8CC55B1E4E64C8008DF511 /* Helpers */,
+				0C8CC55A1E4E64B0008DF511 /* elements.txt */,
+				0C8CC5561E4E615B008DF511 /* dictionary.txt */,
+				0C8CC5581E4E61E7008DF511 /* WordDictionary.swift */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		0C8CC55B1E4E64C8008DF511 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -120,6 +171,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C8CC5551E4E5FEE008DF511 /* ChemistrySpeller.swift in Sources */,
+				0C96872B1E6A0DA3003F826A /* Euler1.swift in Sources */,
+				0C8CC5591E4E61E7008DF511 /* WordDictionary.swift in Sources */,
+				0CAFE4ED1E57738700BC73B4 /* Euler14.swift in Sources */,
+				0C80CC921E60E4F300BDCB1B /* ScrabbleChallenge.swift in Sources */,
 				0C8CC54C1E4E5F9F008DF511 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -250,6 +306,7 @@
 				0C8CC5511E4E5F9F008DF511 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
