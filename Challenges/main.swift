@@ -9,7 +9,7 @@
 import Foundation
 
 let start = Date()
-let answer = Problem64.test()
+let answer = Euler185.test()
 let end = Date()
 let time = end.timeIntervalSince(start) * 1000
 
